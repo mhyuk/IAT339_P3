@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+
+    <header>
+      <h1 class="titleFont titleSize">Portfolio - Style Guide</h1>
+      </header>
+
+
+      <nav class="navBar">        
+        <a href="#interactive_elements">Interactive Elements </a>|
+        <a href="#text_elements">Text Elements </a>|
+        <a href="#combined_elements">Combined Elements </a>|
+        <a href="#citations">Citations</a>
+      </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2 class="sectionTitle">Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <ul>
+
+         <h4>CSS selector:</h4>
+         <p>.mainFont</p>
+
+         <h4>Sample code:</h4>
+         <code>&lt;a href="#"  class="mainFont"&gt;Click me&lt;/a&gt;</code>
+
+         <h4>Rendered element:</h4>
+         <a href="#" class="mainFont">Click me</a>
+        </ul>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+        <ul>
+
+         <h4>CSS selector:</h4>
+         <p>.navbar<br>
+         .navUnderline<br>
+         .active</p>
+
+         <h4 class="underline--magical">Sample code:</h4>
+         <code>
+          &lt;nav&gt;<br>
+          &lt;ul class="navbar"&gt;<br>
+          &lt;li&gt;&lt;a class="navUnderline active" href="#"&gt;HOME&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a class="navUnderline" href="#"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a class="navUnderline" href="#"&gt;PROJECT&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;li&gt;&lt;a class="navUnderline" href="#"&gt;CONTACT&lt;/a&gt;&lt;/li&gt;<br>
+          &lt;/ul&gt;<br>
+          &lt;/nav&gt;<br>
+         </code>
+
+         <h4>Rendered element:</h4>
+         <nav>
+          <ul class="navbar">
+            <li><a class="navUnderline active" href="#">HOME</a></li>
+            <li><a class="navUnderline" href="#">ABOUT</a></li>
+            <li><a class="navUnderline" href="#">PROJECT</a></li>
+            <li><a class="navUnderline" href="#">CONTACT</a></li>
+          </ul>
+         </nav>
+        
+        </ul>
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <ul>
+
+          <h4>CSS selector:</h4>
+          <p>.button-sub<br>
+             .mainFont
+          </p>
+ 
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="button-sub mainFont"&gt;Submit&lt;/a&gt;</code>
+ 
+          <h4>Rendered element:</h4>
+          <a class="button-sub mainFont" href="#">Submit</a>
+          <a class="button-sub mainFont" href="#">Reset</a>
+         </ul>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <ul>
+
+          <h4>CSS selector:</h4>
+          <p>.input</p>
+ 
+          <h4>Sample code:</h4>
+          <code>&lt;input type="text" class="input" placeholder="Name"&gt; </code>
+ 
+          <h4>Rendered element:</h4>
+          <form action="#">
+            <div><input type="text" class="input" placeholder="Name"></div>
+            <div><input type="text" class="input" placeholder="Email Address"></div>
+          </form>
+          </ul>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <ul>
+
+          <h4>CSS selector:</h4>
+          <p>.radioContainer <br>
+            .checkmark
+          </p>
+ 
+          <h4>Sample code:</h4>
+          <code>
+            &lt;form&gt; <br>
+            &lt;label class="radioContainer"&gt;Rose Pink&lt;input type="radio" checked="checked" name="type" value="pink"&gt; <br>
+            &lt;span class="checkmark"&gt;&lt;/span&gt; <br>
+            &lt;/label&gt; <br>
+            &lt;/form&gt;
+           </code>
+            
+            
+          <h4>Rendered element:</h4>
+          <form>
+            <label class="radioContainer">Button A<input type="radio" checked="checked" name="type" value="pink">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radioContainer">Button B<input type="radio" name="type" value="white">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radioContainer">Button C<input type="radio" name="type" value="blue">
+              <span class="checkmark"></span>
+            </label>
+          </form>         </ul>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <ul>
+
+          <h4>CSS selector:</h4>
+          <p>#kudoz1 <br>
+            .imageContainer
+          </p>
+ 
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="imageContainer"&gt;<br>
+            &lt;div id="kudoz1"&lt;/div&gt;<br>
+            &lt;/div&gt;
+          </code>
+ 
+          <h4>Rendered element:</h4>
+          <a href="#">
+          <div class="imageContainer">
+          <div id="kudoz1"></div>
+        </div></a>
+          </ul>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2 class="sectionTitle">Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <ol class="mainFont">
+          <li>Home</li>
+          <li>About</li>
+          <li>Project</li>
+          <li>Contact</li>
+          </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2 class="sectionTitle">Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <section id="citations">
+      <h2 class="sectionTitle">Citations</h2>
+
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+
+    </section>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
