@@ -1,0 +1,379 @@
+/* CSS for Flexbox*/
+
+
+nav li {
+  float:left;
+  margin-left: 0.4em;
+  margin-top: -0.4em;
+  flex: auto;
+  list-style-type: none;
+  
+
+}
+
+li {
+  list-style-type: none;
+  display: list-item;
+
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+.icon{
+  width: 1.6em !important;
+  margin-top:0.7em !important;
+  margin-left: 0.5em !important;
+}
+
+/* HOMEPAGE FLEXBOX */
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  max-width: 110em;
+  padding: 2%;
+
+}
+
+.container .block {
+  height: 200px;
+  flex-basis: 15em;
+  flex-grow:1;
+}
+
+/* .container .banner{
+  height: 34em;
+  max-height: 34em;
+  flex-basis: 15em;
+  flex-grow:1;
+  z-index: -1;
+  position: relative;
+} */
+
+.container .bannerImg{
+ display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  background-image: url('banner_1.jpg');
+  z-index: -1;
+  position: relative;
+}
+
+.container div {
+  padding: 0.1em;
+
+  /* border: 1em solid black; */
+}
+
+.container .btn {
+  position: absolute;
+  top: 85%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.container .hotitem1{
+  height: 40em;
+  flex-basis: 40em;
+  margin:1em;
+  flex-grow:1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  margin-top:5em;
+  margin-bottom:10em;
+
+
+}
+
+.container .hotitem2{
+  height: 40em;
+  flex-basis: 40em;
+  margin:1em;
+  flex-grow:1;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-size: 100% 100%;
+  width: 100%;
+  margin-top:5em;
+  margin-bottom:10em;
+
+
+}
+
+
+/*Image Hover */
+.image {
+  opacity: 0.8;
+  margin-left: 3em;
+  max-width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image:hover {
+  opacity: 1;
+  transition: .4s ease;
+}
+
+/* Hamburger Menu
+   Tutorial from https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr */
+
+   .menu-btn{
+    margin-top: 0.2em;
+    position: relative;
+     display:flex;
+     justify-content: center;
+     align-items:center;
+     width:40px;
+     height:40px;
+     cursor:pointer;
+     transition: all .5s ease-in-out;
+     float: right;
+   }
+
+   .menu-btn_burger{
+     width: 25px;
+     height: 3px;
+     background :#FFF;
+     border-radius: 5px;
+     transition: all .5s ease-in-out;
+   }
+
+   .menu-btn_burger::before,
+   .menu-btn_burger::after{
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background :#FFF;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+   }
+
+   .menu-btn_burger::before{
+     transform: translateY(-8px);
+   }
+   .menu-btn_burger::after{
+    transform: translateY(8px);
+  }
+
+  /* ANIMATION */
+
+  .menu-btn.open .menu-btn_burger{
+    transform: translate(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .menu-btn.open .menu-btn_burger::before{
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .menu-btn.open .menu-btn_burger::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  /* Hamburger tutorial from https://www.youtube.com/watch?v=yQimoqo0-7g&ab_channel=EasyTutorials */
+
+  .menu-icon{
+    margin-left:1em;
+    display: none;
+  }
+
+
+
+  /* Media Query */
+  @media only screen and (max-width: 100em) {
+  }
+
+  @media only screen and (max-width: 92em) {
+
+  }
+
+  @media only screen and (max-width: 70em) {
+
+  }
+
+  @media only screen and (max-width: 60em) {
+  }
+
+
+  @media only screen and (max-width: 50em) {
+
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: rgb(34, 34, 34);
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.8s;
+  }
+
+  nav ul li{
+    display: block;
+    margin-right:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a{
+    color: #fff !important;
+  }
+  
+  #MenuItems{
+    height:150px;
+  }
+
+  .menu-icon{
+    display: block;
+    margin-top: 1.5em;
+  }
+
+  }
+
+  @media only screen and (max-width: 45em) {
+
+
+  }
+
+  @media only screen and (max-width: 40em) {
+
+
+
+    }
+
+
+  @media only screen and (max-width: 30em) {
+
+
+    nav{
+      margin-right:-1em;
+    }
+
+    }
+
+    @media only screen and (max-width: 25em) {
+
+
+      }
+
+
+      @media only screen and (max-width: 20em) {
+
+        .navbar{
+          font-size: 14px;
+        }
+        }
+
+
+
+
+        /*
+    begin footer
+    */
+.footer {
+  width: 100%;
+  padding: 1em 2em 0em 8em;
+  text-align: justify;
+  box-sizing: border-box;
+  display: block;
+  color: black;
+  border-top: 1px solid #e7e7e7;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(231, 231, 231);
+
+
+}
+
+.inner-footer {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-items {
+  width: 15em;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.footer-items p {
+  color: grey;
+  text-align: left;
+  line-height: 25px;
+  font-size: 14px;
+  width: 90%;
+}
+
+.footer-items ul {
+  list-style: none;
+  font-size: 13px;
+  margin-left:-3em;
+}
+
+.footer-items ul li, .footer-items ul li a {
+  text-decoration: none;
+  margin: 10px 0px;
+  color: black;
+}
+
+.footer-items a:hover {
+  border-bottom: 1px solid black;
+}
+
+.footer-items h5{
+  font-size: 0.8em;
+  text-transform: uppercase;
+
+}
+
+.social i {
+  margin: 0 10px 10px 1px;
+  font-size: 1.25em;
+  flex-direction: row;
+  color: black;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 10px 0px;
+  margin-left: -3em;
+  font-size: 0.8em;
+  color: rgb(88, 88, 88);
+  text-align: center;
+}

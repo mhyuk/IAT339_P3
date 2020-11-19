@@ -80,6 +80,12 @@ a:active {
   text-decoration: underline;
 
 }
+
+@font-face {
+  font-family: SFUI;
+  src: url(sf-ui-display-heavy.otf);
+}
+
 .titleFont{
   font-family: 'Poppins', sans-serif;
   color: rgb(12, 12, 12);
@@ -390,6 +396,7 @@ https://www. .com/howto/howto_css_custom_checkbox.asp------*/
 
 .bioDetail{
   font-size:20px;
+  margin-right:15em;
   margin-bottom: 1em;
 }
 
