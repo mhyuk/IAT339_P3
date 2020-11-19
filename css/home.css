@@ -163,6 +163,31 @@ BANNER START
 
   }
 
+  .contactForm{
+    margin-bottom: 5em;
+    padding:35px;
+  }
+
+ 
+  
+
+  
+  .contactForm input[type=text], select, textarea {
+    width: 100%;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /* Media Query */
@@ -226,6 +251,16 @@ BANNER START
       .projectImg{
         flex-basis: 10em;
         max-width:40%;
+      }
+
+      .project1-img {
+        max-width: 70%;
+
+    }
+
+      .project2-img {
+        max-width: 100%;
+
       }
 }
 
@@ -345,7 +380,7 @@ BANNER START
 
       .project2-img {
         float: none;
-        max-width: 80%;
+        max-width: 120%;
 
       }
 }
@@ -409,7 +444,16 @@ BANNER START
         left: 90%;
         transform: translate(-60%, -50%);
         font-size: 1em;
+      }
 
+      .project1-img {
+        max-width: 90%;
+
+    }
+
+      .project2-img {
+        max-width: 150%;
+        margin-left: -1em;
       }
 
 }

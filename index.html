@@ -26,9 +26,9 @@
 
     <nav style="float:right;">
         <ul class="navbar" id="MenuItems">
-          <li><a class="navUnderline" href="#">ABOUT</a></li>
-          <li><a class="navUnderline" href="#">PROJECT</a></li>
-          <li><a class="navUnderline" href="#">CONTACT</a></li>
+          <li><a class="navUnderline" href="#about">ABOUT</a></li>
+          <li><a class="navUnderline" href="#project">PROJECT</a></li>
+          <li><a class="navUnderline" href="#contact">CONTACT</a></li>
         </ul>
 
         <div class="menu-btn menu-icon" onclick="menutoggle()">
@@ -48,7 +48,7 @@
 
 <div class="break"></div><br><br>
 
-  <div class="container">
+  <div class="container" id="about">
     <div class="break"></div>
 
     <div class="hotitem1">          
@@ -62,7 +62,7 @@
     </div>
     </div>
 
-    <div class="projectContainer">  
+    <div class="projectContainer" id="project">  
         <div class="projectImg">   <a href="project1.html">   
         <img class="project1-img image" src="img/kudoz_cover.png" alt=""></a> 
       </div>  
@@ -82,7 +82,16 @@
     </div>  
   </div>
       
+<div class="container contactForm" id="contact">
+  <form action="#">
+    <div><input type="text" class="input" placeholder="Name"></div>
+    <div><input type="text" class="input" placeholder="Email Address"></div>
+    <textarea placeholder="Your Message...."></textarea><br>
+    <a class="button-sub mainFont" href="#">Submit</a>
+  </form>
+</div>
 
+ 
     <script src="main.js"></script>
 
     <!--begin footer-->

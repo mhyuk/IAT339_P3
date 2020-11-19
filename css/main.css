@@ -130,7 +130,6 @@ nav ul{
 /*Image Hover */
 .image {
   opacity: 0.8;
-  margin-left: 3em;
   max-width: 100%;
   transition: .5s ease;
   backface-visibility: hidden;
