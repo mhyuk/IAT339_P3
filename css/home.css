@@ -127,6 +127,7 @@ BANNER START
     justify-content: space-around;
     align-items: center;
 
+    margin-top: 10vw;
     margin-bottom: 15em;
   }
   
@@ -168,27 +169,71 @@ BANNER START
     padding:35px;
   }
 
- 
-  
-
-  
   .contactForm input[type=text], select, textarea {
-    width: 100%;
+    width:100%;
   }
   
 
+  .skillContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    width:70%;
+    margin-top:5vw;
+    margin-bottom:10vw;
+  }
 
+   .skillTitle {
+    width: 100%;
+    text-align: center;
+    font-size:30px;
+    flex-basis: 15em;
+    flex-grow:1;
+    margin-bottom: 1vw;
+    text-decoration: underline;
+    }
 
+  .skillLabel {
+    width: 3em;
+    text-align: center;
+    font-size:16px;
+    flex-basis: 10em;
+    flex-grow:1;
+  }
 
+  .contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    width:100%;
+    margin-top:5vw;
+    margin-bottom:1vw;
+  }
+  .conTitle {
+    width: 100%;
+    text-align: center;
+    font-size:30px;
+    flex-basis: 15em;
+    flex-grow:1;
+    margin-bottom: 1vw;
+    }
+    .conLabel {
+      width: 1em;
+      text-align: center;
+      font-size:16px;
+      flex-basis: 10em;
+      flex-grow:1;
+    }
 
-
-
-
-
-
-
-
-
+    .icon{
+      margin:1em;
+    }
 
   /* Media Query */
   @media only screen and (max-width: 1600px) {
@@ -286,7 +331,7 @@ BANNER START
       }
 
       
-      .bioTitle{
+      .hotitem1 .bioTitle{
         font-size: 45px;
         
       }
@@ -316,7 +361,7 @@ BANNER START
         font-size: 2em;
       }
 
-      .bioTitle{
+      .hotitem1 .bioTitle{
         font-size: 40px;
         
       }
@@ -353,7 +398,7 @@ BANNER START
       }
 
       
-      .bioTitle{
+      .hotitem1 .bioTitle{
         font-size: 35px;
         
       }
@@ -411,7 +456,7 @@ BANNER START
         width: 90%;
       }
 
-      .bioTitle{
+      .hotitem1 .bioTitle{
         font-size: 25px;
       }
 
@@ -475,7 +520,7 @@ BANNER START
         font-size: 1em;
       }
 
-      .bioTitle{
+      .hotitem1 .bioTitle{
           margin-top:5em;
         font-size: 18px;
       }

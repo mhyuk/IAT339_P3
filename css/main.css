@@ -1,5 +1,7 @@
 /* CSS for Flexbox*/
-
+html {
+  scroll-behavior: smooth;
+}
 
 nav li {
   float:left;
@@ -95,7 +97,7 @@ nav ul{
 }
 
 .container .hotitem1{
-  height: 40em;
+  height: 30em;
   flex-basis: 40em;
   margin:1em;
   flex-grow:1;
@@ -111,7 +113,7 @@ nav ul{
 }
 
 .container .hotitem2{
-  height: 40em;
+  height: 30em;
   flex-basis: 40em;
   margin:1em;
   flex-grow:1;
@@ -121,7 +123,7 @@ nav ul{
   background-size: 100% 100%;
   width: 100%;
   margin-top:5em;
-  margin-bottom:10em;
+  margin-bottom:20vw;
 
 
 }
@@ -208,20 +210,6 @@ nav ul{
 
 
   /* Media Query */
-  @media only screen and (max-width: 100em) {
-  }
-
-  @media only screen and (max-width: 92em) {
-
-  }
-
-  @media only screen and (max-width: 70em) {
-
-  }
-
-  @media only screen and (max-width: 60em) {
-  }
-
 
   @media only screen and (max-width: 50em) {
 
@@ -257,17 +245,6 @@ nav ul{
 
   }
 
-  @media only screen and (max-width: 45em) {
-
-
-  }
-
-  @media only screen and (max-width: 40em) {
-
-
-
-    }
-
 
   @media only screen and (max-width: 30em) {
 
@@ -278,25 +255,30 @@ nav ul{
 
     }
 
-    @media only screen and (max-width: 25em) {
-
-
-      }
-
 
       @media only screen and (max-width: 20em) {
 
         .navbar{
           font-size: 14px;
         }
+      }
+
+        @media only screen and (max-width: 1200px) {
+          .project1Image{
+              margin-top:0em; 
+              float:none;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+          .infographics{
+              margin-left:5%;
+            }
         }
 
 
 
-
-        /*
-    begin footer
-    */
+        /* begin footer */
 .footer {
   width: 100%;
   padding: 1em 2em 0em 8em;
