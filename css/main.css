@@ -21,9 +21,7 @@ nav ul {
 }
 
 .icon {
-  width: 1.6em !important;
   margin-top: 0.7em !important;
-  margin-left: 0.5em !important;
 }
 
 /* HOMEPAGE FLEXBOX */
@@ -227,10 +225,8 @@ nav ul {
   nav {
     margin-right: -1em;
   }
-}
-@media only screen and (max-width: 20em) {
   .navbar {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 1200px) {

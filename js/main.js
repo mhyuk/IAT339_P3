@@ -7,7 +7,7 @@ var w = window.innerWidth;
 if (window.innerWidth<800){
     MenuItems.style.maxHeight = "0px";
 }else{
-    MenuItems.style.maxHeight = "100px";
+    MenuItems.style.maxHeight = "65px";
 }
 
 window.addEventListener('resize', function(){
@@ -15,7 +15,7 @@ window.addEventListener('resize', function(){
         MenuItems.style.maxHeight = "0px";
     
     }else{
-        MenuItems.style.maxHeight = "100px";
+        MenuItems.style.maxHeight = "65px";
 
     }
 }, true);
@@ -25,7 +25,7 @@ menuBtn.addEventListener('click', () => {
     if(!menuOpen){
         menuBtn.classList.add('open');
         menuOpen = true;
-        MenuItems.style.maxHeight = "100px";
+        MenuItems.style.maxHeight = "65px";
 
     }else{
         menuBtn.classList.remove('open');
