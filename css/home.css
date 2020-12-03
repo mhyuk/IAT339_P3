@@ -173,6 +173,7 @@ BANNER START
     width:100%;
   }
   
+  
 
   .skillContainer {
     display: flex;
@@ -200,8 +201,9 @@ BANNER START
     width: 3em;
     text-align: center;
     font-size:16px;
-    flex-basis: 10em;
+    flex-basis: 15em;
     flex-grow:1;
+    padding:2vw;
   }
 
   .contactContainer {
