@@ -263,6 +263,8 @@ nav ul{
         }
       }
 
+      
+
         @media only screen and (max-width: 1200px) {
           .project1Image{
               margin-top:0em; 
@@ -276,6 +278,12 @@ nav ul{
             }
         }
 
+        @media only screen and (max-width: 800px) {
+
+          .navbar{
+            z-index: 10;
+          }
+        }
         
 
 
@@ -304,7 +312,6 @@ nav ul{
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-content: center;
 }
 
 .footer-items {
