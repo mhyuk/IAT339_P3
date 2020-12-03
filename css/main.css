@@ -4,34 +4,29 @@ html {
 }
 
 nav li {
-  float:left;
+  float: left;
   margin-left: 0.4em;
   margin-top: -0.4em;
   flex: auto;
   list-style-type: none;
-  
-
 }
 
 li {
   list-style-type: none;
   display: list-item;
-
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
 }
 
-.icon{
+.icon {
   width: 1.6em !important;
-  margin-top:0.7em !important;
+  margin-top: 0.7em !important;
   margin-left: 0.5em !important;
 }
 
 /* HOMEPAGE FLEXBOX */
-
-
 .container {
   display: flex;
   flex-direction: row;
@@ -41,13 +36,12 @@ nav ul{
   align-content: flex-start;
   max-width: 110em;
   padding: 2%;
-
 }
 
 .container .block {
   height: 200px;
   flex-basis: 15em;
-  flex-grow:1;
+  flex-grow: 1;
 }
 
 /* .container .banner{
@@ -58,22 +52,20 @@ nav ul{
   z-index: -1;
   position: relative;
 } */
-
-.container .bannerImg{
- display: flex;
+.container .bannerImg {
+  display: flex;
   flex-flow: row nowrap;
   align-items: center;
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
-  background-image: url('banner_1.jpg');
+  background-image: url("banner_1.jpg");
   z-index: -1;
   position: relative;
 }
 
 .container div {
   padding: 0.1em;
-
   /* border: 1em solid black; */
 }
 
@@ -89,206 +81,175 @@ nav ul{
   text-align: center;
 }
 
-
-
 .break {
   flex-basis: 100%;
   height: 0;
 }
 
-.container .hotitem1{
+.container .hotitem1 {
   height: 30em;
   flex-basis: 40em;
-  margin:1em;
-  flex-grow:1;
+  margin: 1em;
+  flex-grow: 1;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   background-size: 100% 100%;
   width: 100%;
-  margin-top:5em;
-  margin-bottom:10em;
-
-
+  margin-top: 5em;
+  margin-bottom: 10em;
 }
 
-.container .hotitem2{
+.container .hotitem2 {
   height: 30em;
   flex-basis: 40em;
-  margin:1em;
-  flex-grow:1;
+  margin: 1em;
+  flex-grow: 1;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   background-size: 100% 100%;
   width: 100%;
-  margin-top:5em;
-  margin-bottom:20vw;
-
-
+  margin-top: 5em;
+  margin-bottom: 20vw;
 }
-
 
 /*Image Hover */
 .image {
   opacity: 0.8;
   max-width: 100%;
-  transition: .5s ease;
-  backface-visibility: hidden;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .image:hover {
   opacity: 1;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
 /* Hamburger Menu
    Tutorial from https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr */
+.menu-btn {
+  margin-top: 0.2em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  float: right;
+}
 
-   .menu-btn{
-    margin-top: 0.2em;
-    position: relative;
-     display:flex;
-     justify-content: center;
-     align-items:center;
-     width:40px;
-     height:40px;
-     cursor:pointer;
-     transition: all .5s ease-in-out;
-     float: right;
-   }
+.menu-btn_burger {
+  width: 25px;
+  height: 3px;
+  background: #FFF;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
 
-   .menu-btn_burger{
-     width: 25px;
-     height: 3px;
-     background :#FFF;
-     border-radius: 5px;
-     transition: all .5s ease-in-out;
-   }
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: #FFF;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
 
-   .menu-btn_burger::before,
-   .menu-btn_burger::after{
-    content:'';
-    position: absolute;
-    width: 25px;
-    height: 3px;
-    background :#FFF;
-    border-radius: 5px;
-    transition: all .5s ease-in-out;
-   }
+.menu-btn_burger::before {
+  transform: translateY(-8px);
+}
 
-   .menu-btn_burger::before{
-     transform: translateY(-8px);
-   }
-   .menu-btn_burger::after{
-    transform: translateY(8px);
-  }
+.menu-btn_burger::after {
+  transform: translateY(8px);
+}
 
-  /* ANIMATION */
+/* ANIMATION */
+.menu-btn.open .menu-btn_burger {
+  transform: translate(-50px);
+  background: transparent;
+  box-shadow: none;
+}
 
-  .menu-btn.open .menu-btn_burger{
-    transform: translate(-50px);
-    background: transparent;
-    box-shadow: none;
-  }
+.menu-btn.open .menu-btn_burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
 
-  .menu-btn.open .menu-btn_burger::before{
-    transform: rotate(45deg) translate(35px, -35px);
-  }
+.menu-btn.open .menu-btn_burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
 
-  .menu-btn.open .menu-btn_burger::after{
-    transform: rotate(-45deg) translate(35px, 35px);
-  }
+/* Hamburger tutorial from https://www.youtube.com/watch?v=yQimoqo0-7g&ab_channel=EasyTutorials */
+.menu-icon {
+  margin-left: 1em;
+  display: none;
+}
 
-  /* Hamburger tutorial from https://www.youtube.com/watch?v=yQimoqo0-7g&ab_channel=EasyTutorials */
-
-  .menu-icon{
-    margin-left:1em;
-    display: none;
-  }
-
-
-
-  /* Media Query */
-
-  @media only screen and (max-width: 50em) {
-
-  nav ul{
+/* Media Query */
+@media only screen and (max-width: 50em) {
+  nav ul {
     position: absolute;
     top: 70px;
     left: 0;
-    background: rgb(34, 34, 34);
+    background: #222222;
     width: 100%;
     overflow: hidden;
     transition: max-height 0.8s;
   }
 
-  nav ul li{
+  nav ul li {
     display: block;
-    margin-right:10px;
+    margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  nav ul li a{
+  nav ul li a {
     color: #fff !important;
   }
-  
-  #MenuItems{
-    height:150px;
+
+  #MenuItems {
+    height: 150px;
   }
 
-  .menu-icon{
+  .menu-icon {
     display: block;
     margin-top: 1.5em;
   }
-
+}
+@media only screen and (max-width: 30em) {
+  nav {
+    margin-right: -1em;
   }
-
-
-  @media only screen and (max-width: 30em) {
-
-
-    nav{
-      margin-right:-1em;
-    }
-
-    }
-
-
-      @media only screen and (max-width: 20em) {
-
-        .navbar{
-          font-size: 14px;
-        }
-      }
-
-      
-
-        @media only screen and (max-width: 1200px) {
-          .project1Image{
-              margin-top:0em; 
-              float:none;
-            }
-        }
-
-        @media only screen and (max-width: 1000px) {
-          .infographics{
-              margin-left:5%;
-            }
-        }
-
-        @media only screen and (max-width: 800px) {
-
-          .navbar{
-            z-index: 10;
-          }
-        }
-        
-
-
-
-        /* begin footer */
+}
+@media only screen and (max-width: 20em) {
+  .navbar {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .project1Image {
+    margin-top: 0em;
+    float: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .infographics {
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .navbar {
+    z-index: 10;
+  }
+}
+/* begin footer */
 .footer {
   width: 100%;
   padding: 1em 2em 0em 8em;
@@ -299,9 +260,7 @@ nav ul{
   border-top: 1px solid #e7e7e7;
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: rgb(231, 231, 231);
-
-
+  border-top-color: #e7e7e7;
 }
 
 .inner-footer {
@@ -333,7 +292,7 @@ nav ul{
 .footer-items ul {
   list-style: none;
   font-size: 13px;
-  margin-left:-3em;
+  margin-left: -3em;
 }
 
 .footer-items ul li, .footer-items ul li a {
@@ -346,10 +305,9 @@ nav ul{
   border-bottom: 1px solid black;
 }
 
-.footer-items h5{
+.footer-items h5 {
   font-size: 0.8em;
   text-transform: uppercase;
-
 }
 
 .social i {
@@ -364,6 +322,6 @@ nav ul{
   padding: 10px 0px;
   margin-left: -3em;
   font-size: 0.8em;
-  color: rgb(88, 88, 88);
+  color: #585858;
   text-align: center;
 }
